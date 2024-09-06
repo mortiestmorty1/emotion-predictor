@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 50px;
+            width: 300px;
+        }
+        label, input, select {
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+        }
+        .error {
+            color: red;
+        }
+        .result {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Predict User Emotion</h1>
+        <form action="/predict" method="POST">
+            <label>Age:</label>
+            <input type="text" name="age" required>
+            
+            <label>Daily Usage Time (minutes):</label>
+            <input type="text" name="usage_time" required>
+            
+            <label>Posts Per Day:</label>
+            <input type="text" name="posts_per_day" required>
+            
+            <label>Likes Received Per Day:</label>
+            <input type="text" name="likes_per_day" required>
+            
+            <label>Comments Received Per Day:</label>
+            <input type="text" name="comments_per_day" required>
+            
+            <label>Messages Sent Per Day:</label>
+            <input type="text" name="messages_per_day" required>
+            
+            <label>Gender:</label>
+            <select name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label>Platform:</label>
+            <select name="platform" required>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Twitter">Twitter</option>
+            </select>
+
+            <button type="submit">Predict Emotion</button>
+        </form>
+
+        <!-- Display result or error message -->
+        {% if result %}
+            <p class="result">{{ result }}</p>
+        {% elif error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
