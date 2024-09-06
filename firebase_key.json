@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "emotion-predictor-96406",
+  "private_key_id": "022e2bc5e7188ac5ce4e7bfa434fc9ec275af0f9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbr3eeAtY7Door\nVpAV5QFtVgh03evkwHlnvgnz0EUA/ZqqJt9VyV8R8DSwmbzf7pgOfEzISh0IP/9W\negDjO9cxRl5w2ozdJtCmD96SWny0U8W/bXOlXVGL0HTwktTNi3F6tptiav2XeubG\nt3alZSnuzzK2mgE2t5SPEGmv4VTTajYVBiH/kMO2oReUkdbjOeRCiylyaHCixRCM\nibHvwrFugLvzsHirgDFUDCB9S/d5HXekiyTjUk5t/GubDn17kIBuYwmC/e7Nvoir\nnBa3oNIEiD90KYy/0hAmgz+FQZtpLjJzzzaQtHdv1gduDMerrBDnfTFxGTMXpcof\ndvad07s7AgMBAAECggEAD6oN/QYIDBUgbc/d23YZOKkJXMjfbTq4fGmwkqmH59uc\nbjZPDlCeki16/7HYQSe+gOacyyI53ZSi2k6YPETPGBQeeHhk5/N51tuN52fXWEV9\nhg87LY5AIDMvMO11H+FB37jz1WkybsVc5u2asHWHTJHoZlsEeD7sYaCjIaEoacUD\nszNTOngnXIPwNIg7Co/QeqQ+z2BhJYOvxcKbQZ+3vSP7Vr2fM8G5ELaUgWgRyA5X\nPvMCHoggILWFTiQ0r5IWKAk58Mlt6rRW+Q55eNtk6fztU/kVLCuJDiNxOIZDuPjm\nP9SNcLOZhUcvNrGeaPdXgBq2pAtAhSwD5aX+wXwf8QKBgQDYG4eBpfKot6IRLhW6\nzbZ5SoOITH+OJcMAzWqyjsEeVeutCCEKwaFUz0u9BLuqtWFq0TexGP+PUk5SZkpU\nSfGiK4KMmNw86eZIZNn+7YELq2mRdgMP4kOX8do1Wl+dqVlqXYBRZaftY81I3iTc\nNPC93sMUN6ieaOyC91HUbik/BQKBgQC4bJq3usb0OX23QqxEWgq3C2nLtoTHPRKg\nu9hgqS3vdjwOlN6hfq7EMsVPhDA0iLf2QgowuMQBxiCgUul6CEhhepLDziAxOY5s\nA8VVY5jpd9+8KsfymzgUSZsCtvoNTujEVPAKKCK8yywN6+JxEgi4OpFSJlfKKhU/\nU903owOlPwKBgGEhfnY3MCnE34L5Q6sCatF5PEU2nN42+r6RlTNMFmCcHaFX1gIP\npYOI6HG8ftzrSS3Je06N/c9dHvbKIv5ffct14udujQ6T0n0XVyPNfALSuFA4yoeJ\nGvhgK8NvKyqhwx6bh+EN37xC7zGhJtASu2GbjfK4UYFhh2wV3SGtobxBAoGAEApC\nGqDAFRW6/WlrGjbKn8j6VqF1Qu7o49nyo9WTDTS3XH1OL7WY9a+Ewbm5h5gsh9qO\nkFZBlfXpeIg9jkOSKAhFI4qV+jILVRGu5BJZhlTKvM7rvQoLApi0RrQrY2TtkcXh\nasC65Li3CC7v7u2mnH9bjE2RbR/j4TImF2SyOHkCgYEAyDd9vayVMobKa/p+zPIY\nfr8GKzijQD9JgFtVuVP5ECXiifBFbt7WbpVE4OvYNaZN6fcf1ZD0wZp15hk9YYCl\ndQMvrfp//PHIsApE1UX6yD/KWae3mEQ0rdEE7cVUDUFJRetP67KDHqyePJCdUrDM\nnuOqGlQZ74PFc0EpZaKE0Hc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-e5t4e@emotion-predictor-96406.iam.gserviceaccount.com",
+  "client_id": "112855132172993121469",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-e5t4e%40emotion-predictor-96406.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

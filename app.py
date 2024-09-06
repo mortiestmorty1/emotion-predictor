@@ -2,15 +2,32 @@ from flask import Flask, request, render_template
 import pandas as pd
 import joblib
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures
+import firebase_admin
+from firebase_admin import credentials, storage
+from io import BytesIO
+
+# Initialize Firebase app with your credentials
+cred = credentials.Certificate('firebase_key.json')  # Path to your Firebase service account key
+firebase_admin.initialize_app(cred, {
+    'storageBucket': 'emotion-predictor-96406.appspot.com'  # Replace with your Firebase project ID
+})
+
+# Function to load model from Firebase Storage
+def load_model_from_firebase(file_name):
+    bucket = storage.bucket()
+    blob = bucket.blob(file_name)
+    model_data = blob.download_as_bytes()
+    model = joblib.load(BytesIO(model_data))
+    return model
+
+# Load the models dynamically from Firebase
+best_model = load_model_from_firebase('random_forest_model.pkl')
+scaler = load_model_from_firebase('scaler.pkl')
+poly = load_model_from_firebase('poly_transform.pkl')
+model_columns = load_model_from_firebase('model_columns.pkl')
 
 # Initialize Flask app
 app = Flask(__name__)
-
-# Load the saved model, scaler, and polynomial transformer
-best_model = joblib.load('random_forest_model.pkl')
-scaler = joblib.load('scaler.pkl')
-poly = joblib.load('poly_transform.pkl')
-model_columns = joblib.load('model_columns.pkl')
 
 @app.route('/')
 def index():
