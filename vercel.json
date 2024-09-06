@@ -6,11 +6,19 @@
         "use": "@vercel/python"
       }
     ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "app.py"
+    "functions": {
+      "api/*.py": {
+        "memory": 1024,
+        "maxDuration": 10
       }
+    },
+    "ignore": [
+      "firebase_key.json",
+      "data/",
+      "notebooks/",
+      "*.pkl",
+      "tests/",
+      ".git/"
     ]
   }
   
