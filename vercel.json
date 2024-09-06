@@ -6,12 +6,6 @@
         "use": "@vercel/python"
       }
     ],
-    "functions": {
-      "api/*.py": {
-        "memory": 1024,
-        "maxDuration": 10
-      }
-    },
     "ignore": [
       "firebase_key.json",
       "data/",
