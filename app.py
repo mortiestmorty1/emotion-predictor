@@ -6,8 +6,14 @@ import firebase_admin
 from firebase_admin import credentials, storage
 from io import BytesIO
 
-# Initialize Firebase app with your credentials
-cred = credentials.Certificate('firebase_key.json')  # Path to your Firebase service account key
+# Get Firebase key path from environment variable
+firebase_key_path = os.getenv('FIREBASE_KEY_PATH')
+
+if not firebase_key_path:
+    raise Exception("FIREBASE_KEY_PATH environment variable not set")
+
+# Initialize Firebase app
+cred = credentials.Certificate(firebase_key_path) # Path to your Firebase service account key
 firebase_admin.initialize_app(cred, {
     'storageBucket': 'emotion-predictor-96406.appspot.com'  # Replace with your Firebase project ID
 })
