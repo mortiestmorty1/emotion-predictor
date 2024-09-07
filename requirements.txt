@@ -1,13 +1,13 @@
-blinker==1.8.2
-click==8.1.7
 Flask==3.0.3
 Flask-Cors==5.0.0
-itsdangerous==2.2.0
-Jinja2==3.1.4
-joblib==1.4.2
-MarkupSafe==2.1.5
-numpy==2.0.1
-scikit-learn --only-binary :all:
-scipy==1.14.1
-threadpoolctl==3.5.0
+scikit-learn==1.2.2  # Use only-binary installation
+numpy==1.24.2  # Version compatible with scikit-learn
+scipy==1.10.0  # A version that balances size and functionality
+joblib==1.2.0  # Slightly newer version if needed
 Werkzeug==3.0.4
+blinker==1.5  # A slightly older version but still compatible
+click==8.0.4  # A version that might be lighter than 8.1.7
+itsdangerous==2.1.2  # A version that may be lighter
+Jinja2==3.0.3  # Align with Flask's dependencies
+MarkupSafe==2.1.1  # Align with Jinja2's dependencies
+threadpoolctl==3.0.0  # Use a version compatible with scikit-learn
